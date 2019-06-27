@@ -50,35 +50,22 @@ const Loader = styled.div<Loader>`
   margin-bottom: 5px;
 `;
 
-interface Placeholder {
-  error?: any;
-  loading: any;
-}
-
-const Placeholder = ({ error, loading }: Placeholder) => {
-  if (error) {
-    return <Wrapper>Error</Wrapper>;
-  }
-
-  if (loading) {
-    return (
-      <Wrapper>
-        <LogoLoader>
-          <Loader width="60px" box={true} />
-        </LogoLoader>
-        <ContentLoader>
-          <Loader width="100%" />
-          <Loader width="100px" />
-          <CommentLoader>
-            <Loader width="80px" />
-            <Loader width="50px" />
-          </CommentLoader>
-        </ContentLoader>
-      </Wrapper>
-    );
-  }
-
-  return null;
+const Placeholder = () => {
+  return (
+    <Wrapper>
+      <LogoLoader>
+        <Loader width="60px" box={true} />
+      </LogoLoader>
+      <ContentLoader>
+        <Loader width="100%" />
+        <Loader width="100px" />
+        <CommentLoader>
+          <Loader width="80px" />
+          <Loader width="50px" />
+        </CommentLoader>
+      </ContentLoader>
+    </Wrapper>
+  );
 };
 
 export default Placeholder;

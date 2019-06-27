@@ -4,12 +4,13 @@ import Store from "stores";
 import styled, { createGlobalStyle, ThemeProvider } from "styled-components";
 import Sidebar from "components/sidebar";
 import Card from "components/card";
+import theme, { ThemeMode } from "utils/themes";
 
 const GlobalStyles = createGlobalStyle`
   body {
     font-family: sans-serif;
     font-size: 14px;
-    background: #f3f3f3;
+    background: ${theme.bgColor};
   }
 `;
 
@@ -17,12 +18,6 @@ const Body = styled.div`
   width: 1024px;
   margin: 0 auto;
   display: flex;
-
-  .submit {
-    background: #393434;
-    color: #fff;
-    font-size: 0.8rem;
-  }
 `;
 
 class MyApp extends App {
@@ -40,7 +35,7 @@ class MyApp extends App {
     const { Component, pageProps } = this.props;
 
     return (
-      <ThemeProvider theme={{}}>
+      <ThemeProvider theme={{ mode: ThemeMode.Light }}>
         <Store.Provider>
           <GlobalStyles />
           <Container>

@@ -13,7 +13,11 @@ export default () => {
   }
 
   if (HNStories.loading || PHStories.loading) {
-    return "loading...";
+    return (
+      <Card title="">
+        <Story placeholder={true} total={10} />;
+      </Card>
+    );
   }
 
   const data: IStory[] = [
@@ -22,12 +26,15 @@ export default () => {
   ];
 
   data.sort((a: IStory, b: IStory) => {
-    if (a.source.likesCount < b.source.likesCount) {
-      return -1;
+    const moreLikes = a.source.likesCount < b.source.likesCount;
+    const lessLikes = a.source.likesCount > b.source.likesCount;
+
+    if (moreLikes) {
+      return 1;
     }
 
-    if (a.source.likesCount > b.source.likesCount) {
-      return 1;
+    if (lessLikes) {
+      return -1;
     }
 
     return 0;
