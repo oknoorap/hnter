@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import classnames from "classnames";
+import themes from "utils/themes";
 
 const Wrapper = styled.div`
   display: flex;
@@ -25,7 +25,7 @@ interface Container {
 const Container = styled.div<Container>`
   padding: ${props => (props.hasPadding ? "20px" : null)};
   box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
-  background: #fff;
+  background: ${themes.card.bgColor};
   border-radius: 5px;
   overflow: hidden;
 
