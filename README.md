@@ -1,41 +1,35 @@
-# TypeScript & Styled Components Next.js example
+<h1 align="center">Welcome to HNTER 👋</h1>
+<p>
+  <img src="https://img.shields.io/badge/version-1.0.0-blue.svg?cacheSeconds=2592000" />
+  <a href="https://twitter.com/oknoorap">
+    <img alt="Twitter: oknoorap" src="https://img.shields.io/twitter/follow/oknoorap.svg?style=social" target="_blank" />
+  </a>
+</p>
 
-This is a really simple project that show the usage of Next.js with TypeScript and Styled Components.
+> Hacker and Product Hunter News
 
-## How to use it?
+## Install
 
-### Using `create-next-app`
-
-Execute [`create-next-app`](https://github.com/segmentio/create-next-app) with [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/) or [npx](https://github.com/zkat/npx#readme) to bootstrap the example:
-
-```bash
-npx create-next-app --example with-typescript-styled-components with-typescript-app
-# or
-yarn create next-app --example with-typescript-styled-components with-typescript-app
+```sh
+yarn install
+yarn build
+yarn start
 ```
 
-### Download manually
+## Development Mode
 
-Download the example:
-
-```bash
-curl https://codeload.github.com/zeit/next.js/tar.gz/canary | tar -xz --strip=2 next.js-canary/examples/with-typescript-styled-components
-cd with-typescript-styled-components
-```
-
-Install it and run:
-
-```bash
-npm install
-npm run dev
-# or
-yarn
+```sh
 yarn dev
 ```
 
-## The idea behind the example
+## Author
 
-This is an amalgamation of the 2 existing examples:
+👤 **Ribhararnus Pracutian &lt;oknoorap@gmail.com&gt;**
 
-- [with-typescript](https://github.com/zeit/next.js/tree/canary/examples/with-typescript)
-- [with-styled-components](https://github.com/zeit/next.js/tree/canary/examples/with-styled-components)
+* Twitter: [@oknoorap](https://twitter.com/oknoorap)
+* Github: [@oknoorap](https://github.com/oknoorap)
+
+## Show your support
+
+Give a ⭐️ if this project helped you!
+Send me 1000 ETH to 0xab1c4e446900ad20bf5fae1be67f87d54dacd2f0 😁 just kidding.
